@@ -106,5 +106,74 @@
 }
 
 
-/* Checkout */
+/* History */
+.fonts-history{
+  text-align: left;
+  font-size: 30px;
+  font-family: Airbnb Cereal App;
+}
+.card1{
+  position: relative;
+  background: linear-gradient(285.38deg, #FBB2B4 30.05%, rgba(255, 143, 178, 0) 133.19%);
+  filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));
+  border-radius: 10px;
+  height:200px;
+}
 
+.card2{
+  position: relative;
+  background: linear-gradient(285.38deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
+  filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));
+  border-radius: 10px;
+  height:200px;
+  
+}
+
+.card3{
+  position: relative;
+  background: linear-gradient(285.38deg, #AB84C8 30.05%, rgba(241, 201, 236, 0) 133.19%);
+  filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
+  border-radius: 10px;
+  height:200px;
+}
+.rectangle91{
+  position: fixed;
+  top:30%;
+  left:10%;
+}
+
+.rectangle92{
+  position: fixed;
+  top:30%;
+  left:10%;
+}
+
+.rectangle93{
+  position: fixed;
+  top:30%;
+  left:10%;
+}
+
+.buble1{
+  position: absolute;
+  width:60px;
+  height:60px;
+  background: rgba(253, 211, 228, 0.3);
+  border-radius: 50%;
+}
+
+.buble2{
+  position: absolute;
+  width:60px;
+  height:60px;
+  background: rgba(207, 246, 253, 0.3);
+  border-radius: 50%;
+}
+
+.buble3{
+  position: absolute;
+  width:60px;
+  height:60px;
+  background: rgba(241, 201, 236, 0.3);
+  border-radius: 50%;
+}

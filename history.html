@@ -1,26 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="history.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
 
-  <title>History</title>
-</head>
-<body>
-  
-  <div class="container">
-    <div class="header">   
-     <div class="header-img">
-        <img src="images/menu (1).png" alt="">
-      </div>
-      <div class="header-text">
-        <h1>History</h1>
-      </div>
-    </div>   
-  </div>
-</body>
+    <!-- fonts -->
+    <link href="https://fonts.cdnfonts.com/css/airbnb-cereal-app" rel="stylesheet">
+                
+
+    <title>History</title>
+
+    <!-- chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Revenue',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid my-container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+
+          <!-- Top from here -->
+          <div class="row">
+            <div class="col">
+              <div class="row rectangle">
+                <div class="col-6">
+                  <img src="images/menu (1).png" class="float-left" alt="...">
+                </div>
+                <div class="col-6">
+                  <h5 class="fonts-history">History</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Top finish -->
+
+          <!--  Side  -->
+          <div class="row">
+            <div class="col col-md-1 col-lg-1 rectangle2">
+             <img src="images/fork.png" class="rounded mx-auto d-block" alt="">
+             <img src="images/clipboard.png" class="rounded mx-auto d-block" alt="">
+             <img src="images/add.png" class="rounded mx-auto d-block" alt="">
+            </div>
+
+            <!-- Menu -->
+            <div class="col-md-11  rectangle3">
+              <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-3">
+                  <div class="col col-sm-6 col-md-4">
+                    <div class="card card1">
+                      <div class="rectangle91">
+                        <h6>Today's Income</h6>
+                        <h5>RP.1.000.000</h5>
+                        <h6>+2% Yesterday</h6>
+                      </div>
+                      <div class="buble1" style="left:80%; top:5%;"></div>
+                      <div class="buble1"style="left:66%; top:18%;"></div>
+                      <div class="buble1" style="left:72%; top:12%;"></div>
+                    </div>
+                  </div>
+                  <div class="col col-sm-6 col-md-4">
+                    <div class="card card2">
+                      <div class="rectangle92">
+                        <h6>Orders</h6>
+                        <h5>3.270</h5>
+                        <h6>+5% Last Week</h6>
+                      </div>
+                      <div class="buble2"style="left:80%; top:5%;"></div>
+                      <div class="buble2"style="left:66%; top:18%;"></div>
+                      <div class="buble2"style="left:72%; top:12%;"></div>
+                    </div>
+                  </div>
+                  <div class="col col-sm-6 col-md-4">
+                    <div class="card card3">
+                      <div class="rectangle93">
+                        <h6>This Year's Income</h6>
+                        <h5>RP.100.000.000.000</h5>
+                        <h6>+10% Last Year</h6>
+                      </div>
+                      <div class="buble3" style="left:80%; top:5%;"></div>
+                      <div class="buble3"style="left:66%; top:18%;"></div>
+                      <div class="buble3"style="left:72%; top:12%;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-sm-12 col-md-12">
+                    <div class="card">
+                      <div id="curve_chart" style="height: 400px; margin-top:20px;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:140px; background: #ffffff;">
+                  <div class="col col-sm-12 col-md-12">
+                    <div class="row" style="margin-bottom:30px;">
+                      <div class="col-6 col-sm-6 col-lg-6">
+                        <h5>Recent Order</h5>
+                      </div>
+                      <div class="col-6 col-sm-6 col-lg-6">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Today
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                        <h6>INVOICES</h6>
+                        <P>#10928</P>
+                      </div>
+                      <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                        <h6>CASHIER</h6>
+                        <p>Cashier 1</p>
+                      </div>
+                      <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                        <h6>DATE</h6>
+                        <p>27 Juli 2020</p>
+                      </div>
+                      <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                        <h6>ORDERS</h6>
+                        <P>Ice Tea, Salad With Peanut</P>
+                      </div>
+                      <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                        <h6>AMOUNT</h6>
+                        <p>RP.120.000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+    <!-- container end  -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>
