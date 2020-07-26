@@ -1,0 +1,40 @@
+
+/* Home /index*/
+@media(min-width:768px){
+    .fonts{
+        font-size: 30px;
+    }
+
+    .rectangle3{
+        height:922px;
+      }
+    
+    .rectangle2{
+        height:938px;
+        display:inline-block;
+    }
+
+    .rectangle2 img{
+        padding-bottom: 50px;
+      }
+    
+    .rectangle4{
+        height:938px;
+    }
+}
+
+/* Home Select */
+/* @media(min-width:768px){
+    .check{
+        margin-top:-210px;
+        
+      }
+}
+
+@media(max-width:780px){
+    .check{
+        
+        margin-top:-300px;
+        margin-bottom:230px;
+    }
+} */

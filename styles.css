@@ -1,0 +1,129 @@
+*{
+  box-sizing: border-box;
+}
+
+/* Home */
+/* container */
+.my-container{
+  background: #ffffff;
+}
+
+/* Top from here */
+.rectangle{
+  text-align: center;
+  height:100px;
+  padding-top: 28px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  margin-top:6px;
+}
+
+.fonts{
+  font-size: 25px;
+  text-align: center;
+  font-family: Airbnb Cereal App;
+}
+
+/* side from here */
+.rectangle2{
+  padding-top: 30px;
+  padding-bottom:30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display:inline-flex;
+  
+}
+
+.rectangle3{
+  background: rgba(190, 195, 202, 0.3);
+}
+
+.card{
+  margin-top:20px;
+  background: rgba(190, 195, 202, 0);
+  border: none;
+}
+
+.card-title{
+  font-family: Airbnb Cereal App;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.card-text{
+  font-family: Airbnb Cereal App;
+  font-size: 25px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.rectangle4{
+  border: 1px solid #CECECE;
+}
+
+.rectangle4-img{
+  margin-top: 50px;
+}
+.rectangle4-text{
+  margin-top: -30px;
+}
+
+.fonts-rectangle4{
+  font-size:20px;
+  text-align: center;
+  font-family: Airbnb Cereal App; 
+  color: #cecece;
+}
+
+.rectangle5{
+  height:100px;
+  padding-top: 28px;
+  box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.fonts-rectangle5{
+  font-size:25px;
+  text-align: center;
+  font-family: Airbnb Cereal App;
+
+}
+
+.zero{
+  background: #57CAD5;
+  font-family: Airbnb Cereal App;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 100%;
+  color: #ffffff;
+}
+
+
+/* Home Select */
+
+.fonts-cart{
+  font-family: Airbnb Cereal App;
+  font-size: 20px;
+}
+
+
+/* Checkout */
+
+.hitam{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.popup{
+  position: fixed;
+  top:25%;
+  
+  background: #ffffff;
+  height:100%;
+  width:100%;
+
+}
+
