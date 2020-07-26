@@ -1,6 +1,11 @@
+@media(min-width:576px){
 
-/* Home /index*/
+}
+
+
+
 @media(min-width:768px){
+    /* Home/Index */
     .fonts{
         font-size: 30px;
     }
@@ -21,20 +26,11 @@
     .rectangle4{
         height:938px;
     }
-}
 
-/* Home Select */
-/* @media(min-width:768px){
-    .check{
-        margin-top:-210px;
-        
-      }
-}
+    /* Home Select */
 
-@media(max-width:780px){
-    .check{
-        
-        margin-top:-300px;
-        margin-bottom:230px;
+    .fonts-cart{
+        font-size: 20px;
     }
-} */
+}
+

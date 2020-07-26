@@ -133,7 +133,72 @@
                 <img src="images/food-and-restaurant.png" class="rounded mx-auto d-block">
               </div>
               <div class="rectangle4-text">
-                <h5 class="fonts">Your cart is empty</h5>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">
+                  <h5 class="fonts">Your cart is empty</h5>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="container">
+                          <div class="row" style="padding-bottom: 20px;">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                              <h5>Add Item</h5>
+                            </div>
+                          </div>
+                          <form>
+                            <div class="form-group row">
+                              <label for="inputEmail3" class="col-sm-2 col-form-label">
+                                <h5>Name</h5>
+                              </label>
+                              <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputPassword3" class="col-sm-2 col-form-label">
+                                <h5>Image</h5>
+                              </label>
+                              <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputPassword3" class="col-sm-2 col-form-label">
+                                <h5>Price</h5>
+                              </label>
+                              <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputPassword3" class="col-sm-2 col-form-label">
+                                <h5>Category</h5>
+                              </label>
+                              <div class="btn-group" style="margin-left: 50px;">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Category
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                  <button class="dropdown-item" type="button">Action</button>
+                                  <button class="dropdown-item" type="button">Another action</button>
+                                  <button class="dropdown-item" type="button">Something else here</button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="modal-footer" style="border-top:none ;">
+                        <button type="button" class="btn" data-dismiss="modal" style="background: #F24F8A;color:#ffffff">Cancel</button>
+                        <button type="button" class="btn" style="background: #57CAD5; color:#ffffff">Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <p class="fonts-rectangle4">Please add some items from the menu</p>
               </div>
             </div>
@@ -141,6 +206,8 @@
         </div>
       </div>
     </div>
+
+    
 
     <!-- container end  -->
 
